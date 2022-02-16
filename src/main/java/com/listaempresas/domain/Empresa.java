@@ -1,23 +1,38 @@
 package com.listaempresas.domain;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Empresa {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class Empresa implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String nome;
 	private String descricao;
 	
-	private RamoDeAtividade ramoDeAtividade;
+	@ManyToOne
+	@JoinColumn(name = "atividade_id")
+	private RamoDeAtividade atividade;
 
 	public Empresa() {
 	}
 
-	public Empresa(Integer id, String nome, String descricao, RamoDeAtividade ramoDeAtividade) {
+	public Empresa(Integer id, String nome, String descricao, RamoDeAtividade atividade) {
 		this.id = id;
 		this.nome = nome;
 		this.descricao = descricao;
-		this.ramoDeAtividade = ramoDeAtividade;
+		this.atividade = atividade;
 	}
 
 	public Integer getId() {
@@ -45,11 +60,11 @@ public class Empresa {
 	}
 
 	public RamoDeAtividade getRamoDeAtividade() {
-		return ramoDeAtividade;
+		return atividade;
 	}
 
-	public void setRamoDeAtividade(RamoDeAtividade ramoDeAtividade) {
-		this.ramoDeAtividade = ramoDeAtividade;
+	public void setRamoDeAtividade(RamoDeAtividade atividade) {
+		this.atividade = atividade;
 	}
 
 	@Override
