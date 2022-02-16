@@ -10,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Empresa implements Serializable {
 
@@ -21,6 +23,7 @@ public class Empresa implements Serializable {
 	private String nome;
 	private String descricao;
 	
+	@JsonIgnore
 	@ManyToOne
 	@JoinColumn(name = "atividade_id")
 	private RamoDeAtividade atividade;
@@ -59,11 +62,11 @@ public class Empresa implements Serializable {
 		this.descricao = descricao;
 	}
 
-	public RamoDeAtividade getRamoDeAtividade() {
+	public RamoDeAtividade getAtividade() {
 		return atividade;
 	}
 
-	public void setRamoDeAtividade(RamoDeAtividade atividade) {
+	public void setAtividade(RamoDeAtividade atividade) {
 		this.atividade = atividade;
 	}
 

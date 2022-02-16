@@ -9,6 +9,4 @@ public class BackendListaEmpresasSpringbootApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BackendListaEmpresasSpringbootApplication.class, args);
 	}
-
-
 }

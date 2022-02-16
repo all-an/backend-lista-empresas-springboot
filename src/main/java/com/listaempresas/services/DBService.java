@@ -26,8 +26,8 @@ public class DBService {
 		RamoDeAtividade atividade3 = new RamoDeAtividade(null, "Turismo", "Viagens e Acomodações");
 		
 		Empresa empresa1 = new Empresa(null, "AllanTech LTDA", "Inovação e Tecnologia", atividade1);
-		Empresa empresa2 = new Empresa(null, "ELRapido LTDA", "Empresa de Entregas", atividade1);
-		Empresa empresa3 = new Empresa(null, "ALLViagens1 LTDA", "Empresa de Viagens", atividade1);
+		Empresa empresa2 = new Empresa(null, "ELRapido LTDA", "Empresa de Entregas", atividade2);
+		Empresa empresa3 = new Empresa(null, "ALLViagens1 LTDA", "Empresa de Viagens", atividade3);
 		Empresa empresa4 = new Empresa(null, "EDevGames1 LTDA", "Empresa de Games", atividade1);
 		
 		atividade1.getEmpresas().addAll(Arrays.asList(empresa1, empresa4));
