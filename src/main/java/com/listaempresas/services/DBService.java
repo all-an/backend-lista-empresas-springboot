@@ -22,7 +22,7 @@ public class DBService {
 	public void instanciaBaseDeDados() {
 		
 		RamoDeAtividade atividade1 = new RamoDeAtividade(null, "Tecnologia", "Desenvolvimento de Software");
-		RamoDeAtividade atividade2 = new RamoDeAtividade(null, "Logistica", "Logistica");
+		RamoDeAtividade atividade2 = new RamoDeAtividade(null, "Logistica", "Entregas e Logistica");
 		RamoDeAtividade atividade3 = new RamoDeAtividade(null, "Turismo", "Viagens e Acomodações");
 		
 		Empresa empresa1 = new Empresa(null, "AllanTech LTDA", "Inovação e Tecnologia", atividade1);

@@ -11,6 +11,7 @@
 - Spring Boot
 - Spring Web Tools
 - Spring Data Jpa
+- MySQL
 - H2 Database
 
 ### Roteiro:
@@ -20,4 +21,16 @@
 - [x] ● Configurando H2 Database
 - [ ] ● 
 
+
+### Dependência MySQL
+
+```xml
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.28</version>
+</dependency>
+
+```
 
