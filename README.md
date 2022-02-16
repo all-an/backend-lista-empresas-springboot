@@ -16,8 +16,8 @@
 ### Roteiro:
 
 - [x] ● Configuração do projeto em https://start.spring.io/
-- [ ] ● Criação das classes e pacotes 
-- [ ] ● 
+- [x] ● Criação das classes de domínio
+- [x] ● Configurando H2 Database
 - [ ] ● 
 
 
